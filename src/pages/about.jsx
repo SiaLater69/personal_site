@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div style={{ height: '70vh' }}>
+    <div style={{ height: '100vh' }}>
         <p>My name is Siyasanga Njana, and I am a dedicated Web Developer and Computer Technician with a passion for technology and innovation.  
               I specialize in freelance work, offering my expertise in creating dynamic, responsive 
               and user-friendly websites for clients and providing comprehensive computer repair services.</p>

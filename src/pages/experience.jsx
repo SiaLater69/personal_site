@@ -2,7 +2,7 @@ import  './experience.css';
 const Experience = () => {
   return (
     <div>
-        <div style={{height: '70vh'}}>
+        <div style={{height: '100vh'}}>
         
   <div className="card">
     <h3 className="title">Freelance Web Developer</h3>
