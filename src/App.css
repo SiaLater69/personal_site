@@ -59,6 +59,16 @@ overflow: 'hidden'
 .project h1{
   text-align: center;
 }
+
+::selection {
+  background: aquamarine; /* Light pink background */
+  color: #000000; /* Black text */
+}
+
+::-moz-selection {
+  background: aquamarine;
+  color: #000000;
+}
 @media (max-width: 480px){
   .container h1{
     font-size: 40px;
