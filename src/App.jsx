@@ -4,6 +4,7 @@ import SplitContainer from './components/container';
 import { GitHubIcon, LinkedInIcon } from './components/svg';
 import About from './pages/about';
 import Experience from './pages/experience';
+import Projects from './pages/projects';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <div>
               <About />
               <Experience/>
+              <Projects/>
             </div>
           }
         />

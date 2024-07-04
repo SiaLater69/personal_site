@@ -2,8 +2,6 @@ import  './experience.css';
 const Experience = () => {
   return (
     <div>
-        <div style={{height: '100vh'}}>
-        
   <div className="card">
     <h3 className="title">Freelance Web Developer</h3>
     <p className="task">Build and maintain website for clients.
@@ -94,9 +92,7 @@ const Experience = () => {
       </div>
     </div>
   </div>
-
-        </div> 
-    </div>
+    </div> 
   )
 }
 
