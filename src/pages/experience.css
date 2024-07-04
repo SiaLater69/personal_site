@@ -1,24 +1,23 @@
-/* start of card */
+/* Default styles (for desktop) */
 
 .card {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 10px;
-    border-radius: 10px;
-    backdrop-filter: blur(30px);
-    border: 1px solid transparent;
-    cursor: pointer;
-  }
-  
-  .card:hover {
-    border-color: rgba(255, 255, 255, 0.2);  
-    
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
-    background-color: rgba(75, 75, 75, 0.4); 
-  }
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.card:hover {
+  border-color: rgba(255, 255, 255, 0.2);  
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
+  background-color: rgba(75, 75, 75, 0.4); 
+}
 
 .title {
   font-weight: 900;
@@ -28,10 +27,9 @@
 }
 
 .task {
-padding-left: 10%;
-padding-right: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-
 
 .minmaxContainer {
   width: 100%;
@@ -69,46 +67,76 @@ padding-right: 10%;
   color: rgb(197, 197, 197);
 }
 
-/* button starts */
-
 button {
-    display: flex;
-    color: aqua;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-    border: 0px solid transparent;
-    background-color: transparent;
-    border-radius: 1.25em;
-    transition: all 0.2s linear;
-   }
-   
-   .tooltip {
-    position: relative;
-    display: inline-block;
-   }
+  display: flex;
+  color: aqua;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border: 0px solid transparent;
+  background-color: transparent;
+  border-radius: 1.25em;
+  transition: all 0.2s linear;
+}
 
-   .tech{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    padding: 10px 20px;
-   }
-   
-   @media screen and (max-width: 600px) {
-    .card { 
-      padding: 10px 5px;
-    }
-    .title {
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tech {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 767px) {
+  .card {
+      padding: 15px 5px;
+  }
+
+  .title {
       font-size: 1.5em;
-    }
-    .task {
+  }
+
+  .task {
       padding-left: 5%;
       padding-right: 5%;
-    } 
-    
-   }
+  }
+
+  .minmaxContainer {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .min,
+  .max {
+      width: 100%;
+      align-items: center;
+      padding: 10px 0;
+  }
+
+  .maxHeading,
+  .minHeading {
+      font-size: 0.8em;
+  }
+
+  .maxTemp,
+  .minTemp {
+      font-size: 0.7em;
+  }
+
+  button {
+      padding: 0.5em;
+  }
+
+  .tech {
+      padding: 5px 10px;
+  }
+}
