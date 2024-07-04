@@ -1,4 +1,4 @@
-import React from 'react';
+import  './container.css'
 
 const SplitContainer = ({ leftContent, rightContent }) => {
   return (
