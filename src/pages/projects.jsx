@@ -7,7 +7,7 @@ const Projects = () => {
     <h1>Projects</h1> 
     <div className='card'>
       <p>Internet speed test built with python and the tkinter GUI library</p>
-      <img src={speed} alt="internet speed test"/>
+      <img src={speed} width={300} height={300} alt="internet speed test"/>
     </div>
     </div>
   )
