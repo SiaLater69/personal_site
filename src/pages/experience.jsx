@@ -2,6 +2,7 @@ import  './experience.css';
 const Experience = () => {
   return (
     <div>
+    <h1 style={{textAlign:"center"}}>Experience</h1>
   <div className="card">
     <h3 className="title">Freelance Web Developer</h3>
     <p className="task">Build and maintain website for clients.
