@@ -7,8 +7,13 @@ const Projects = () => {
     <h1>Projects</h1> 
     <div className='card'>
       <p>Internet speed test built with python and the tkinter GUI library</p>
-      <img src={speed} width={300} height={300} alt="internet speed test"/>
+      <img src={speed} width={100} height={100} alt="internet speed test"/>
+      <button className="tooltip">Python</button>
     </div>
+
+    <div className='card'>
+      <p>Coming Soon</p>
+      </div>
     </div>
   )
 }
