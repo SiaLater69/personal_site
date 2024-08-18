@@ -59,6 +59,9 @@ overflow: 'hidden'
 .project h1{
   text-align: center;
 }
+img{
+  border-radius: 12px;
+}
 
 ::selection {
   background: aquamarine; /* Light pink background */
@@ -89,5 +92,9 @@ overflow: 'hidden'
     justify-content: center;
     margin-left: 50%;
     gap: 20px;
+  }
+  img{
+    width: 200px;
+    height: 200px;
   }
 }
