@@ -1,19 +1,22 @@
 import React from 'react'
 import electric from '../assets/electric.png'
+import qes from '../assets/qes.png'
 
 const Projects = () => {
   return (
     <div className='project'>
     <h1>Projects</h1> 
     <div className='card'>
-    
       <p>Electric Car Showcase Site</p>
-      <a href="https://github.com/SiaLater69/fully-charged"><img src={electric} width={400} height={250} alt="Electric Car Site"/></a>
+      <a href="https://fully-charged-psi.vercel.app/"><img src={electric} width={600} height={300} alt="Electric Car Site"/></a>
       <button className="tooltip">React</button>
     </div>
 
     <div className='card'>
-      <p>Coming Soon</p>
+      <p>QES Recruitment Website</p>
+      <a href="https://qes-brown.vercel.app/"><img src={qes} width={600} height={300} alt="QES recruitment site"/></a>
+      <button className="tooltip">React</button>
+      <button className="tooltip">Tailwind CSS</button>
       </div>
     </div>
   )
