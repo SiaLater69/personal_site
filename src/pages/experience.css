@@ -1,5 +1,10 @@
 /* Default styles (for desktop) */
-
+:root {
+  --primary-color: white;
+  --secondary-color: aqua;
+  --background-color: rgba(75, 75, 75, 0.4);
+  --text-color: rgb(197, 197, 197);
+}
 .card {
   position: relative;
   width: 100%;
@@ -11,12 +16,14 @@
   backdrop-filter: blur(30px);
   border: 1px solid transparent;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .card:hover {
   border-color: rgba(255, 255, 255, 0.2);  
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
   background-color: rgba(75, 75, 75, 0.4); 
+  transition: all 0.3s ease;
 }
 
 .title {
@@ -81,6 +88,11 @@ button {
   transition: all 0.2s linear;
 }
 
+button:hover, button:focus {
+  background-color: rgba(0, 255, 255, 0.1);
+  outline: 2px solid var(--secondary-color);
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
@@ -138,5 +150,98 @@ button {
 
   .tech {
       padding: 5px 10px;
+  }
+}
+
+/* Existing styles remain unchanged */
+
+/* ... (previous code) ... */
+
+/* Media query for tablets */
+@media screen and (max-width: 1024px) {
+  .card {
+    padding: 18px 8px;
+  }
+
+  .title {
+    font-size: 1.7em;
+  }
+
+  .task {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .minmaxContainer {
+    flex-direction: row;
+  }
+
+  .min,
+  .max {
+    width: 50%;
+    padding: 5px 10px;
+  }
+
+  .maxHeading,
+  .minHeading {
+    font-size: 0.75em;
+  }
+
+  .maxTemp,
+  .minTemp {
+    font-size: 0.65em;
+  }
+
+  button {
+    padding: 0.8em;
+  }
+
+  .tech {
+    padding: 8px 15px;
+  }
+}
+
+/* Media query for small mobile devices */
+@media screen and (max-width: 480px) {
+  .card {
+    padding: 12px 3px;
+  }
+
+  .title {
+    font-size: 1.3em;
+  }
+
+  .task {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .minmaxContainer {
+    flex-direction: column;
+  }
+
+  .min,
+  .max {
+    width: 100%;
+    align-items: center;
+    padding: 8px 0;
+  }
+
+  .maxHeading,
+  .minHeading {
+    font-size: 0.7em;
+  }
+
+  .maxTemp,
+  .minTemp {
+    font-size: 0.6em;
+  }
+
+  button {
+    padding: 0.4em;
+  }
+
+  .tech {
+    padding: 3px 8px;
   }
 }

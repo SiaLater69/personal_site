@@ -1,42 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
-.container{
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-display: flex;
-align-items: 'center';
-justify-content: 'center';
-overflow: 'hidden'
-} 
+:root {
+  --main-font: "Exo 2", sans-serif;
+  --text-color: #e2e2e2;
+}
 
-.container h1{
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container h1, .container h3, .container h5 {
+  font-family: var(--main-font);
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: var(--text-color);
+}
+
+.container h1 {
   font-size: 60px;
-  color: #e2e2e2;
-  font-family: "Exo 2", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 900;
-  font-style: normal;
 }
 
-.container h3{
+.container h3 {
   font-size: 30px;
-  color: #e2e2e2;
-  font-family: "Exo 2", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 900;
-  font-style: normal;
 }
 
-.container h5{
+.container h5 {
   font-size: 16px;
-  color: #e2e2e2;
-  font-family: "Exo 2", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 500;
-  font-style: normal;
 }
 
 .container p{
