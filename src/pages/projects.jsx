@@ -5,7 +5,7 @@ import dadsEat from '../assets/dadsEat.png'
 
 const Projects = () => {
   return (
-    <div className='project'>
+    <div className='project h-screen'>
     <h1>Projects</h1> 
     <div className='card'>
       <p>Electric Car Showcase Site</p>
@@ -25,6 +25,10 @@ const Projects = () => {
       <button className="tooltip">React</button>
       <button className="tooltip">Tailwind CSS</button>
       </div>
+      <div className='card h-screen mt-10'>
+      <p>Coming Soon...</p>
+      </div>
+
     </div>
   )
 }
