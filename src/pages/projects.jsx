@@ -2,6 +2,7 @@ import React from 'react'
 import electric from '../assets/electric.png'
 import qes from '../assets/qes.png'
 import dadsEat from '../assets/dadsEat.png'
+import ethan from '../assets/ethan.png'
 
 const Projects = () => {
   return (
@@ -24,6 +25,13 @@ const Projects = () => {
       <a href="https://dad-eats.vercel.app/"><img src={dadsEat} width={600} height={300} alt="Dads Eat Restuarant"/></a>
       <button className="tooltip">React</button>
       <button className="tooltip">Tailwind CSS</button>
+      </div>
+      <div className='card'>
+        <p>Content Creator Site</p>
+        <a href="https://content-creator-site.vercel.app/"><img src={ethan} width={600} height={300} alt="content creator site"/></a>
+        <button className="tooltip">React</button>
+        <button className="tooltip">TypeScript</button>
+        <button className="tooltip">Tailwind CSS</button>
       </div>
       <div className='card h-screen mt-10'>
       <p>Coming Soon...</p>

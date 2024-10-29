@@ -16,7 +16,6 @@ const DarkBackground = () => {
       style={{
         width: '100vw',
         height: '100vh',
-        background: 'rgb(17, 4, 134)',
         background: 'linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85))',
         position: 'relative',
         overflow: 'hidden',
