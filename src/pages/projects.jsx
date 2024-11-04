@@ -3,6 +3,7 @@ import electric from '../assets/electric.png'
 import qes from '../assets/qes.png'
 import dadsEat from '../assets/dadsEat.png'
 import ethan from '../assets/ethan.png'
+import business from '../assets/businessService.png'
 
 const Projects = () => {
   return (
@@ -29,6 +30,13 @@ const Projects = () => {
       <div className='card'>
         <p>Content Creator Site</p>
         <a href="https://content-creator-site.vercel.app/"><img src={ethan} width={600} height={300} alt="content creator site"/></a>
+        <button className="tooltip">React</button>
+        <button className="tooltip">TypeScript</button>
+        <button className="tooltip">Tailwind CSS</button>
+      </div>
+      <div className='card'>
+        <p>Business Service</p>
+        <a href="https://business-service.vercel.app/"><img src={business} width={600} height={300} alt="content creator site"/></a>
         <button className="tooltip">React</button>
         <button className="tooltip">TypeScript</button>
         <button className="tooltip">Tailwind CSS</button>
